@@ -6,7 +6,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(process.cwd(), '../app/assets/javascripts'),
-    publicPath: '/javascripts/',
+    publicPath: '/assets/',
     filename: 'bundle.js'
   },
   module: {
