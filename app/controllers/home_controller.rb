@@ -1,7 +1,10 @@
 class HomeController < ApplicationController
-
+  before_action :set_auth
+  
   def index
-    render 'layouts/application'
   end
-
+  
+  def set_auth
+		@auth = session[:omniauth] if session[:omniauth]
+	end
 end

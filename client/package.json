@@ -2,23 +2,29 @@
   "name": "github-project-frontend",
   "version": "1.0.0",
   "description": "Front end for Github API project",
-  "repository": "git@github.com:lsecrease/GS2.git",
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/lsecrease/GS2.git"
+  },
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js"
   },
   "author": "",
-  "license": "",
+  "license": "ISC",
   "devDependencies": {
     "axios": "^0.12.0",
     "babel-core": "^6.2.1",
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
+    "css-loader": "^0.23.1",
     "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
     "redux-promise": "^0.5.3",
+    "style-loader": "^0.13.1",
     "webpack": "^1.12.9",
-    "webpack-dev-server": "^1.14.0"
+    "webpack-dev-server": "^1.14.0",
+    "postcss-loader": "^0.9.1"
   },
   "dependencies": {
     "babel-preset-stage-1": "^6.1.18",
@@ -28,5 +34,10 @@
     "react-redux": "^4.0.0",
     "react-router": "^2.0.1",
     "redux": "^3.0.4"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/lsecrease/GS2/issues"
+  },
+  "homepage": "https://github.com/lsecrease/GS2#readme",
+  "main": "webpack.config.js"
 }

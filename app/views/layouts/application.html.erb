@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Workspace</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<%= render 'layouts/header' %>
+
+<div class= "container app" id="app"></div>   
+<% if controller_name == 'sessions' %>
+  <%= yield %>
+<% else %>
+ <%= javascript_include_tag 'bundle', 'data-turbolinks-track' => true %>
+<% end %>
+
+</body>
+</html>

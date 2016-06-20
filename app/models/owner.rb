@@ -1,11 +1,3 @@
-# Model for repo owners. Currently this doesn't serve much purpose. Initially
-# the idea was to make sure there was a sane interface for all of the data that
-# comes back from a GitHub API response. Because data about the repo's owner is
-# encapsulated here it would be relatively simple to display more about the
-# owner on the search results page.
-#
-# This model is not backed by the database since no search results are stored
-# or cached.
 class Owner
   include Virtus::Model
 

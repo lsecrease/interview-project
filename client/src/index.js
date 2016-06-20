@@ -5,7 +5,7 @@ import { createStore, applyMiddleware } from 'redux';
 import ReduxPromise from 'redux-promise';
 
 import App from './components/app';
-import Search from './containers/Page.Search/Page.Search';
+import Search from './containers/Page.Search';
 import reducers from './reducers';
 
 const createStoreWithMiddleware = applyMiddleware(ReduxPromise)(createStore);
@@ -16,4 +16,8 @@ ReactDOM.render(
       <Search />
     </App>
   </Provider>
-  , document.querySelector('.container'));
+  , document.querySelector('.app'));
+  
+  
+  
+  //document.querySelector('.app'));
